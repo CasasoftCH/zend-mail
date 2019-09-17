@@ -214,7 +214,7 @@ class Imap
                         $line .= $this->nextLine();
                     }
                     $tokens[] = $token;
-                    $line = trim($line) . ' ';
+                    $line = trim($line); // MY FIX!!!
                     continue;
                 }
             }
